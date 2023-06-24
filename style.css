@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+}
+
+/* Header Start */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  padding: 1% 0;
+
+  background: #f0f0f0;
+  box-shadow: 0em 0.25em 0.25em rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+#logo,
+.navigation {
+  width: 50%;
+  cursor: pointer;
+}
+#logo {
+  display: inline-block;
+  padding-left: 3rem;
+  text-align: left;
+}
+
+.navigation {
+  margin-left: 60%;
+  display: inline-flex;
+  padding-right: 4rem;
+  text-align: right;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu {
+  display: inline-block;
+}
+.three-dots li {
+  background: none repeat scroll 0 0 #3683f0;
+  width: 0.1875em;
+  height: 0.1875em;
+  line-height: 0;
+  list-style: none outside none;
+  margin-top: 0.1875em;
+  vertical-align: top;
+  border-radius: 50%;
+}
+
+/* Header End */
+
+main {
+  margin: 4em 12%;
+}
+
+/* Technical Project Management */
+#title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+h1,
+#button {
+  display: inline-block;
+}
+h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.75em;
+  line-height: 2.2em;
+  letter-spacing: 0.02em;
+
+  color: #0029ff;
+}
+
+#button {
+  text-align: right;
+  width: 50%;
+}
+button {
+  border: none;
+
+  background: #0029ff;
+  border-radius: 0.625em;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75em;
+
+  color: #ffffff;
+
+  padding: 0.4rem 1rem;
+}
+button:hover {
+  cursor: pointer;
+}
+
+/* Explore the world of management */
+
+article {
+  background: #e9ecef;
+  border-radius: 0.3125em;
+  padding: 0.8em 1.25em;
+  margin-bottom: 3em;
+}
+h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25em;
+  line-height: 1.875em;
+
+  letter-spacing: 0.02em;
+}
+article > div {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 1.3em;
+  letter-spacing: 0.02em;
+}
+
+/* Journey Board Points in Detail */
+
+#detailed-points-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section {
+  width: 30em;
+  height: 36.25em;
+  border-radius: 1em;
+  background-color: #fdfdfd;
+  box-shadow: 0px -4px 4px 0px #00000040, 0px 4px 4px 0px #00000040;
+  margin: 1em;
+}
+.detail-journeyboard-point-title {
+  font-family: Open Sans;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 8.5%;
+  border-radius: 1em 1em 0 0;
+  position: relative;
+  cursor: pointer;
+}
+.toggle-description {
+  position: absolute;
+  right: 6%;
+}
+.journeyboard-point-body {
+  height: 91.5%;
+  border-radius: inherit;
+}
+.journeyboard-point-description span {
+  font-family: Open Sans;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.journeyboard-point-description {
+  font-family: Open Sans;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+
+  max-height: fit-content;
+  padding: 1em;
+  transition: max-height 0.5s ease-in, padding 0.5s ease-out;
+  overflow: hidden;
+}
+.journeyboard-point-description.active {
+  max-height: 0;
+  padding: 0;
+}
+
+/* Journey Board / Collapsible */
+
+#journey-board {
+  position: fixed;
+  left: 0;
+  top: 4em;
+
+  width: 8em;
+  height: calc(100vh - ((15 / 100) * 100vh));
+  box-shadow: 0.0625em 0.25em 0.25em 0.0625em #00000040,
+    0em 0.0625em 0.0625em 0em #00000040;
+  border-radius: 1.25em;
+  background-color: #fff;
+
+  transition: width 0.5s ease-in-out;
+}
+#black-box {
+  position: relative;
+  color: #fff;
+  width: 100%;
+  height: 10%;
+  background-color: #000000;
+  border-radius: 0 1.25em 0 0;
+}
+#black-box img {
+  position: absolute;
+  cursor: pointer;
+  right: 10%;
+  width: 2em;
+  height: 2em;
+
+  transition: transform 0.5s ease-in-out;
+}
+#journey-board-content {
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 1.25em 1.25em;
+  height: 90%;
+  padding: 1em;
+}
+#number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  border-radius: 0.7em;
+  padding: 1em;
+  width: 1em;
+  height: 1em;
+  border: 0.0625em solid #0029ff;
+
+  font-family: Poppins;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: Poppins;
+  letter-spacing: 0.02em;
+  color: #0029ff;
+}
+
+/* Journey Board Expanded */
+
+#journey-board-points {
+  display: none;
+
+  font-family: Poppins;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  text-align: left;
+
+  margin-left: 2em;
+}
+#black-box {
+  display: flex;
+  align-items: center;
+}
+#black-box span {
+  display: none;
+
+  font-family: Poppins;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: left;
+
+  margin-left: 1em;
+}
+
+/* Notice Board */
+
+#notice-board {
+  top: 5em;
+  right: 0;
+  position: fixed;
+  width: 5em;
+  height: 23em;
+  box-shadow: 0em -0.25em 0.25em 0em #00000040, 0em 0.25em 0.25em 0em #00000040;
+
+  border-radius: 1.875em 0em 0em 1.875em;
+  cursor: pointer;
+}
+
+#notice-board div {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+
+  font-family: Poppins;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: left;
+  background-color: #000000;
+  color: #ffffff;
+
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+
+  border-radius: inherit;
+}
+#notice-board img {
+  margin: 1em 0 1em 0;
+  height: 2.125em;
+  width: 2.125em;
+}
+
+/* Bottom right icons */
+
+#bottom-right-icons {
+  position: fixed;
+  left: 90.49%;
+  top: 70%;
+}
+
+#bottom-right-icons div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #0029ff;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+}
+
+#bottom-right-icons div > img {
+  width: 50%;
+}

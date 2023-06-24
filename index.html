@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Deep Thought</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img
+          src="https://deepthought.education/assets/images/logo/logo.svg"
+          alt="Deep Thought"
+        />
+      </div>
+      <div class="navigation">
+        <img src="assets/home.png" alt="Home" />
+        <img src="assets/setting.png" alt="Setting" />
+        <img src="assets/notification.png" alt="Notification" />
+        <img src="assets/profile-pic.png" alt="Profile Picture" />
+        <div id="menu">
+          <ul class="three-dots">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="title">
+        <h1>Title</h1>
+        <span id="button">
+          <button>Submit task</button>
+        </span>
+      </div>
+      <article>
+        <h2>Task title</h2>
+        <div>Task description</div>
+      </article>
+      <div id="detailed-points-container">
+        <!-- Rendering all tasks here -->
+        <!-- <section>
+          <div class="detail-journeyboard-point-title">
+            <div>Asset Title</div>
+            <img class="toggle-description" src="assets/i.png" alt="Information" />
+          </div>
+          <div class="journeyboard-point-body">
+            <div class="journeyboard-point-description">
+              <span>Description:</span>Asset Description
+            </div>
+            <div style="background-color: blueviolet; height: 3em;"></div>
+          </div>
+        </section> -->
+      </div>
+    </main>
+    <div id="journey-board">
+      <div id="black-box">
+        <span>Journey Board</span
+        ><img src="assets/forward-button.png" alt="open / close" />
+      </div>
+      <div id="journey-board-content">
+        <div id="number">1</div>
+        <ul id="journey-board-points">
+          <li style="font-weight: 600; margin-bottom: 1em">Task title</li>
+          <!-- All other tasks here -->
+        </ul>
+      </div>
+    </div>
+    <div id="notice-board">
+      <div id="left-half"><img src="assets/X.png" alt="" /> Notice Board</div>
+    </div>
+    <div id="bottom-right-icons">
+      <div><img src="assets/question-mark.png" alt="Have Query?" /></div>
+      <div><img src="assets/meeting.png" alt="Meeting" /></div>
+      <div><img src="assets/schedule.png" alt="Schedule" /></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
